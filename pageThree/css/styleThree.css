@@ -19,6 +19,7 @@ body {
     text-align: center;
     gap: 4px;
     animation: backgroundColor 5s;
+    font-family: 'Sedgwick Ave';
 }
 
 section {

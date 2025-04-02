@@ -18,6 +18,7 @@ body {
     margin: 0;
     text-align: center;
     gap: 4px;
+    font-family: 'Sedgwick Ave';
 }
 
 section {
@@ -26,6 +27,7 @@ section {
 
 a {
     text-decoration: none;
+    color: inherit;
 }
 
 #line1, #line2{
@@ -78,7 +80,7 @@ a {
 
 #fadeIn9{
     opacity: 0;
-    animation: fadeIn 1s ease-in-out 4s forwards, slideDownreverse 1.5s ease-out 4s forwards;
+    animation: fadeIn 1s ease-in-out 4s forwards, slideDownreverse 2.5s ease-out 4.3s forwards, opacity 2.5s ease-in-out 4.3s forwards;
 }
 
 @keyframes fadeIn{
@@ -117,12 +119,13 @@ a {
     }
 }
 
-#path{
-    color: rgb(94, 146, 70);
-    transition: 0.5s;
-}
-
-#path:hover{
-    text-shadow: 0 0 5px rgb(94, 146, 70), 0 0 10px rgb(94, 146, 70), 0 0 20px rgb(94, 146, 70), 0 0 40px rgb(94, 146, 70);
-    transform: skew(-35deg);
+@keyframes opacity {
+    from{
+        opacity: 80%;
+    }
+    to{
+        opacity: 30%;
+        color: white;
+        text-shadow: 0 0 5px black, 0 0 10px black, 0 0 20px black, 0 0 40px black;
+    }
 }

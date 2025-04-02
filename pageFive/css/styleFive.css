@@ -1,0 +1,142 @@
+* { 
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    background-color: rgb(210, 206, 206);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    text-align: center;
+    gap: 4px;
+    font-family: 'Sedgwick Ave';
+}
+
+section {
+    margin: 0 10px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#line1, #line2{
+    display: flex;
+    justify-content: center;
+    font-size: 50px;
+}
+
+
+#fadeIn1{
+    animation: fadeIn 1s ease-in-out;
+}
+
+#fadeIn2{
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 0.5s forwards;
+}
+
+#fadeIn3{
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 1s forwards;
+}
+
+#fadeIn4{
+    opacity: 0;
+    color: rgb(218, 74, 74);
+    animation: fadeIn 1s ease-in-out 1.5s forwards, skew 1.5s ease-in-out 1.5s forwards;
+}
+
+#fadeIn5{
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 2.8s forwards;
+}
+
+#fadeIn6{
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 3.3s forwards, marginsOne 2s ease-in-out 5s forwards;
+}
+
+#fadeIn7{
+    opacity: 0;
+    color: rgb(94, 146, 70);
+    animation: fadeIn 1s ease-in-out 3.8s forwards, slideDownreverse 2s ease-in-out 3.3s forwards;
+    transition: 1s;
+}
+
+#fadeIn8{
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out 4.5s forwards, marginsTwo 2s ease-in-out 5s forwards;
+
+}
+
+#fadeIn7:hover{
+    color:rgb(94, 146, 70);
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white, 0 0 40px white;
+}
+
+@keyframes fadeIn{
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes marginsOne {
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(70px, -60px);
+    }
+}
+
+@keyframes marginsTwo {
+    from{
+        transform: translate(0);
+    }
+    to{
+        transform: translate(-70px, -60px);
+    }
+}
+
+@keyframes slideDownreverse{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(40px);
+    }
+}
+
+@keyframes opacity {
+    from{
+        opacity: 80%;
+    }
+    to{
+        opacity: 40%;
+        color: white;
+        text-shadow: 0 0 5px black, 0 0 10px black, 0 0 20px black, 0 0 40px black;
+    }
+}
+
+@keyframes skew{
+    from{
+        transform: skew(0deg);
+    }
+    to{
+        transform: skew(26deg);
+    }
+}

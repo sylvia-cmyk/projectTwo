@@ -18,6 +18,7 @@ body {
     margin: 0;
     text-align: center;
     gap: 4px;
+    font-family: 'Sedgwick Ave';
 }
 
 section {
@@ -124,7 +125,7 @@ a {
         color: rgb(94, 146, 70);
     }
     100%{
-        color: rgb(66, 99, 51);
+        color: rgb(60, 82, 25);
     }
 }
 
@@ -136,7 +137,7 @@ a {
         color: rgb(94, 146, 70);
     }
     100%{
-        color: rgb(66, 99, 51);
+        color: rgb(60, 82, 25);
     }
 }
 
@@ -152,5 +153,5 @@ a {
 
 #path:hover{
     color: rgb(94, 146, 70);
-    text-shadow: 0 0 5px rgb(94, 146, 70), 0 0 10px rgb(94, 146, 70), 0 0 20px rgb(94, 146, 70), 0 0 40px rgb(94, 146, 70);
+    text-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white, 0 0 40px white;
 }
