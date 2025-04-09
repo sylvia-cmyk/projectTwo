@@ -30,12 +30,15 @@ a {
     color: inherit;
 }
 
+/** General ID's and Classes **/
+
 #line1, #line2{
     display: flex;
     justify-content: center;
     font-size: 50px;
 }
 
+/** Animations **/
 
 #fadeIn1{
     animation: fadeIn 1s ease-in-out;
@@ -82,6 +85,8 @@ a {
     opacity: 0;
     animation: fadeIn 1s ease-in-out 4s forwards, slideDownreverse 2.5s ease-out 4.3s forwards, opacity 2.5s ease-in-out 4.3s forwards;
 }
+
+/** Building The Animations **/
 
 @keyframes fadeIn{
     from {

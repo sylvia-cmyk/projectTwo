@@ -28,6 +28,8 @@ a{
     font-size: 35px;
 }
 
+/** Animations **/
+
 a:hover{
     color: rgb(94, 146, 70);
     text-shadow: 0 0 5px white, 0 0 10px white, 0 0 20px white, 0 0 40px white;
@@ -36,6 +38,8 @@ a:hover{
 #fade{
     animation: fadeIn 2s;
 }
+
+/** Building The Animations **/
 
 @keyframes fadeIn{
     from {
